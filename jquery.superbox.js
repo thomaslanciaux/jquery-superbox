@@ -174,18 +174,14 @@
 		// Close SuperBox!
 		close: function() {
 			
-			if ( isWaiting === true ) {
-				hideBox();
-				$overlay.fadeOut(300, function() {
-
-					// Show hidden elements for IE6
-					hideElts.show();
-				});
-				galleryMode = false;
-				$innerbox.height('auto');
-			}
-			
-			
+			hideBox();
+			$overlay.fadeOut(300, function() {
+				
+				// Show hidden elements for IE6
+				hideElts.show();
+			});
+			galleryMode = false;
+			$innerbox.height('auto');
 		},
 		
 		// Image
